@@ -1,0 +1,695 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #fff;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner .banner-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
+.banner .banner-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
+
+nav {
+  background-color: #333;
+  padding: 0;
+  min-height: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.presentation {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #000000;
+}
+.presentation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.presentation p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.intro {
+  background: url("/images/photo_hero_1.jpg");
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.intro .intro-text {
+  text-align: center;
+}
+.intro .intro-text h2 {
+  font-size: 3rem;
+}
+.intro .intro-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.intro .intro-text .cta {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.intro .intro-text .cta:hover {
+  background-color: #0062cc;
+}
+
+.service {
+  padding: 4rem 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.service h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+.service .service-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.service .service-items .service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 300px;
+  flex: 1;
+}
+.service .service-items .service-item h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+.service .service-items .service-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.drivers {
+  padding: 4rem 1rem;
+  background-color: #ddd;
+}
+.drivers .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #bcbcbc;
+}
+.drivers .text-section, .drivers .image-section {
+  flex: 1;
+  padding: 1rem;
+}
+.drivers .text-section {
+  max-width: 50%;
+}
+.drivers .text-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.drivers .text-section p {
+  font-size: 1.2rem;
+  color: #333;
+}
+.drivers .image-section {
+  max-width: 50%;
+}
+.drivers .image-section img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-drivers {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text-drivers h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.text-drivers p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+.text-drivers p:last-child {
+  margin-bottom: 0;
+}
+
+.vehicles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  background-color: #f4f4f4;
+}
+.vehicles .vehicle {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 30%;
+  text-align: center;
+}
+.vehicles .vehicle img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.vehicles .vehicle h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.vehicles .vehicle p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact {
+  padding: 4rem 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.contact .contact-info {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact .contact-info h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.contact .contact-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.contact .contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+.contact .contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-content p {
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ccc; /* Couleur des liens au survol */
+}
+
+.cgv-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cgv-container h1, .cgv-container h2 {
+  color: #ffffff;
+}
+.cgv-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cgv-container h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.cgv-container p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #f0f0f0;
+  line-height: 1.5;
+}
+.cgv-container section {
+  margin-bottom: 20px;
+}
+
+.map-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #d4d4d4;
+  padding: 20px;
+}
+
+#map {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Les labels et les champs */
+label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+  width: 100%; /* Pour que le label prenne la largeur du parent */
+}
+
+select, input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #555;
+}
+
+/* Styles pour les paragraphes */
+p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.legal-container h1, .legal-container h2 {
+  color: #333333;
+}
+.legal-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+}
+.legal-container h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.legal-container p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+.legal-container a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.legal-container a:hover {
+  text-decoration: underline;
+}
+.legal-container section {
+  margin-bottom: 30px;
+}
+
+.prestations-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.prestations-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+}
+.prestations-container .prestation {
+  margin-bottom: 30px;
+}
+.prestations-container .prestation h2 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.prestations-container .prestation p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Masquer le menu par défaut */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Juste en dessous du header */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    text-align: center;
+  }
+  .nav-links.open {
+    display: flex; /* Montrer le menu quand la classe open est ajoutée */
+  }
+  .hamburger {
+    display: flex; /* Montrer le hamburger sur mobile */
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+  .banner {
+    height: auto;
+  }
+  .banner img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .banner .banner-text h1 {
+    font-size: 2rem;
+  }
+  .banner .banner-text p {
+    font-size: 1rem;
+  }
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+  .intro p {
+    font-size: 1.2rem;
+  }
+  .presentation h2 {
+    font-size: 2rem;
+  }
+  .presentation p {
+    font-size: 1rem;
+  }
+  .service-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-item {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .drivers {
+    padding: 2rem 1rem;
+  }
+  .drivers .content {
+    flex-direction: column;
+    padding: 1rem;
+    border: none;
+    background-color: #ddd;
+  }
+  .drivers .text-section, .drivers .image-section {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .drivers .text-section h2 {
+    font-size: 2rem;
+  }
+  .drivers .text-section p {
+    font-size: 1rem;
+  }
+  .drivers .image-section img {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .text-drivers {
+    padding: 20px 10px;
+    background-color: #f9f9f9;
+  }
+  .text-drivers h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .text-drivers p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .vehicles {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .vehicles .vehicle {
+    max-width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .vehicles .vehicle img {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .vehicles .vehicle h3 {
+    font-size: 1.5rem;
+  }
+  .vehicles .vehicle p {
+    font-size: 1rem;
+  }
+  .contact {
+    padding: 2rem 1rem;
+  }
+  .contact .contact-info {
+    padding: 1.5rem;
+  }
+  .contact .contact-info h2 {
+    font-size: 1.8rem;
+  }
+  .contact .contact-info p {
+    font-size: 1rem;
+  }
+  #map {
+    height: 300px;
+  }
+  select, input, button {
+    width: 100%;
+  }
+  #map {
+    height: 300px;
+  }
+  select, input, button {
+    width: 100%;
+  }
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .footer-links {
+    padding: 0;
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+  .footer-links li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .footer-links li a {
+    font-size: 0.9rem;
+  }
+  .cgv-container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .legal-container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

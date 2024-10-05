@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="description" content="Découvrez les tarifs d'Excellecar pour vos transferts privés. Calcul précis selon la distance parcourue, le type de véhicule et les horaires. Service premium avec un prix juste et transparent pour tous vos trajets en toute sécurité.">
+    <title>Excellecar - Nos tarifs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div class="banner">
+        <img src="images/banner_2.jpg" alt="Photo de chauffeur privé">
+        <div class="banner-text">
+        <h1>Excellecar - Tarifs</h1>
+        <p>Le déplacement par excellence</p>
+    </div>
+</div>
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Nos prestations</a></li>
+        <li><a href="price.html">Tarifs</a></li>
+        <li><a href="drivers.html">Nos chauffeurs</a></li>
+        <li><a href="vehicles.html">Nos véhicules</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+    </header>
+    <section class="presentation">
+        <h2>Calculateur de Prix</h2>
+        <p>Notre calculateur de prix est mis à votre disposition pour vous fournir une estimation indicative du coût de votre course. Cependant, veuillez noter que ce tarif est donné à titre informatif et ne constitue en aucun cas un prix définitif.</p>
+        <p>Le montant final de votre course pourra être ajusté à la hausse ou à la baisse en fonction de plusieurs facteurs, notamment l'itinéraire emprunté, la durée du trajet, ou encore les conditions spécifiques de la course. Nous vous invitons à nous contacter directement pour toute précision ou pour obtenir un devis personnalisé.</p>
+    </section>
+<main>
+    <div class="map-form-container">
+    <div id="map"></div>
+
+    <label for="vehicleType">Choisir la gamme de véhicule</label>
+    <select id="vehicleType">
+        <option value="confort">Confort</option>
+        <option value="luxe">Luxe</option>
+        <option value="van">Van</option>
+    </select>
+
+    <label for="start">Adresse de départ :</label>
+    <input type="text" id="start" placeholder="Entrez l'adresse de départ">
+
+    <label for="end">Adresse d'arrivée :</label>
+    <input type="text" id="end" placeholder="Entrez l'adresse d'arrivée">
+
+    <label for="time">Heure de départ :</label>
+    <input type="time" id="time">
+
+    <button id="calculateDistance">Calculer le trajet</button>
+
+    <p id="distanceOutput"></p>
+    <p id="priceOutput"></p>
+</div>
+</main>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Excellecar. Tous droits réservés.</p>
+        <ul class="footer-links">
+            <li><a href="mentions.html">Mentions légales</a></li>
+            <li><a href="price.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="conditions.html">Conditions Générales de Vente</a></li>
+        </ul>
+    </div>
+</footer>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Be_EOCLS00ICdGKJJxtb_6NbgznJ2j0&libraries=places"></script>
+<script src="script.js"></script>
+</body>
+</html>
