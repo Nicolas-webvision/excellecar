@@ -79,7 +79,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100%; 
     bottom: 0;
     z-index: 3;
@@ -603,8 +603,6 @@ p {
 
     .nav {
         position: relative;
-        top: 0;
-        z-index: 3;
     }
     .nav-links {
         display: none; /* Masquer le menu par défaut */
