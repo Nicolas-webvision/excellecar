@@ -515,6 +515,11 @@ p {
 }
 
 @media (max-width: 768px) {
+  .nav {
+    position: relative;
+    top: 0;
+    z-index: 3;
+  }
   .nav-links {
     display: none; /* Masquer le menu par défaut */
     flex-direction: column;
