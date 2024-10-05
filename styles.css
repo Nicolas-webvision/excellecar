@@ -32,8 +32,8 @@ header {
 .banner img {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner .banner-text {
   position: absolute;
@@ -536,6 +536,7 @@ p {
   }
   .banner {
     height: auto;
+    padding-top: 60px;
   }
   .banner img {
     height: 300px;

@@ -39,7 +39,7 @@ header {
     img {
         width: 100%;
         height: auto; 
-        object-fit: contain; 
+        object-fit: cover; 
     }
 
     .banner-text {
@@ -627,6 +627,7 @@ p {
 
     .banner {
         height: auto; 
+        padding-top: 60px;
 
         img {
             height: 300px; 
