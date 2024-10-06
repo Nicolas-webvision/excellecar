@@ -104,6 +104,11 @@ if (document.getElementById("calculateDistance")) {
                     price *= 1.5; // Majoration de 50% pour les heures de nuit
                 }
 
+                // Application du tarif minimum de 25€ pour les trajets de 3 km ou moins
+                if (distance <= 3) {
+                    price = Math.max(price, 25); // Assurer que le prix soit au moins 25€
+                }
+
                 // Afficher la distance et le prix estimé
                 document.getElementById("distanceOutput").textContent = `Distance: ${distance.toFixed(2)} km`;
                 document.getElementById("priceOutput").textContent = `Prix estimé: ${price.toFixed(2)} €`;
@@ -113,3 +118,4 @@ if (document.getElementById("calculateDistance")) {
         });
     });
 }
+
