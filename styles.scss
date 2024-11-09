@@ -474,12 +474,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Les labels et les champs */
 label {
     font-size: 1.1rem;
     margin-bottom: 5px;
     color: #333;
-    width: 100%; /* Pour que le label prenne la largeur du parent */
+    width: 100%;
 }
 
 select, input {
@@ -504,18 +503,54 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: #555;
-    }
 }
 
-/* Styles pour les paragraphes */
+button:hover {
+    background-color: #555;
+}
+
+#stepsContainer {
+    margin-top: 20px;
+}
+
+#stepInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#stepInputs .stepInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#addStep {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addStep:hover {
+    background-color: #555;
+}
+
 p {
     font-size: 1rem;
     color: #333;
     margin-top: 10px;
 }
+
 
 // MENTIONS LEGALES 
 

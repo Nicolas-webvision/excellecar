@@ -40,30 +40,57 @@
     </section>
 <main>
     <div class="map-form-container">
-    <div id="map"></div>
+        <div id="map"></div>
 
-    <label for="vehicleType">Choisir la gamme de véhicule</label>
-    <select id="vehicleType">
-        <option value="confort">Confort</option>
-        <option value="luxe">Luxe</option>
-        <option value="van">Van</option>
-    </select>
+        <!-- Sélection de la gamme de véhicule -->
+        <label for="vehicleType">Choisir la gamme de véhicule</label>
+        <select id="vehicleType">
+            <option value="berline">Berline</option>
+            <option value="van">Van</option>
+        </select>
 
-    <label for="start">Adresse de départ :</label>
-    <input type="text" id="start" placeholder="Entrez l'adresse de départ">
+        <!-- Sélection du type de prestation -->
+        <label for="serviceType">Choisir le type de prestation</label>
+        <select id="serviceType">
+            <option value="simple">Trajet simple</option>
+            <option value="allerRetour">Trajet aller-retour</option>
+            <option value="miseDispo">Mise à disposition</option>
+        </select>
 
-    <label for="end">Adresse d'arrivée :</label>
-    <input type="text" id="end" placeholder="Entrez l'adresse d'arrivée">
+        <!-- Saisie des adresses de départ et d'arrivée -->
+        <label for="start">Adresse de départ :</label>
+        <input type="text" id="start" placeholder="Entrez l'adresse de départ">
 
-    <label for="time">Heure de départ :</label>
-    <input type="time" id="time">
+        <label for="end">Adresse d'arrivée :</label>
+        <input type="text" id="end" placeholder="Entrez l'adresse d'arrivée">
 
-    <button id="calculateDistance">Calculer le trajet</button>
+        <!-- Section pour ajouter les étapes -->
+        <div id="stepsContainer">
+            <label for="steps">Ajouter des étapes :</label>
+            <div id="stepInputs">
+                <input type="text" class="stepInput" placeholder="Entrez une étape intermédiaire">
+            </div>
+            <button type="button" id="addStep">Ajouter une étape</button>
+        </div>
 
-    <p id="distanceOutput"></p>
-    <p id="priceOutput"></p>
-</div>
+        <!-- Sélection de la date et de l'heure de départ -->
+        <label for="date">Date de réservation :</label>
+        <input type="date" id="date">
+
+        <label for="time">Heure de départ :</label>
+        <input type="time" id="time">
+
+        <button id="calculateDistance">Calculer le trajet</button>
+
+        <!-- Affichage des résultats -->
+        <p id="distanceOutput"></p>
+        <p id="priceOutput"></p>
+
+        <!-- Bouton de réservation -->
+        <button id="bookNow">Réserver</button>
+    </div>
 </main>
+
 <footer>
     <div class="footer-content">
         <p>&copy; 2024 Excellecar. Tous droits réservés.</p>
